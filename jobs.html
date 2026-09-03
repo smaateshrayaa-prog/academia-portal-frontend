@@ -1,0 +1,481 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Jobs - AcademiaHub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <nav>
+
+        <div class="logo">
+            Academia<span>Hub</span>
+        </div>
+
+        <div class="nav-links">
+
+            <a href="student-dashboard.html">
+                Dashboard
+            </a>
+
+            <button onclick="window.location.href='index.html'">
+                Logout
+            </button>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Jobs Page -->
+
+    <main class="jobs-page">
+
+        <div class="jobs-container">
+
+            <p class="section-tag">
+                CAREER OPPORTUNITIES
+            </p>
+
+            <h1>Find Your AYUSH Opportunity 💼</h1>
+
+            <p class="jobs-description">
+                Discover AYUSH jobs that match your skillS,qualifications and career interests.
+            </p>
+
+
+            <!-- Search -->
+
+            <div class="job-search">
+
+                <input type="text" id="searchInput" placeholder="Search jobs, skills or companies..."
+                    onkeyup="filterJobs()">
+
+                <select id="locationFilter" onchange="filterJobs()">
+
+                    <option value="">All Locations</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Maharashtra">Maharashtra</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Uttar Pradesh">Uttar Pradesh</option>
+                </select>
+
+            </div>
+
+
+            <!-- Job Cards -->
+
+            <div class="job-list" id="jobList">
+
+
+                <!-- Job 1 -->
+
+                <div class="job-card" data-location="Kerala"
+                    data-search="ayurvedic pharmacist ayurveda pharmacognosy dravyaguna quality control">
+
+                    <div class="job-header">
+
+                        <div>
+                            <h2>Ayurvedic Pharmacist</h2>
+
+                            <p class="company">
+                                AyurHerb Pharmaceuticals
+                            </p>
+                        </div>
+
+                        <span class="match-badge">
+                            92% Match
+                        </span>
+
+                    </div>
+
+
+                    <div class="job-details">
+
+                        <span>📍 Kerala</span>
+
+                        <span>💼 Full-time</span>
+
+                        <span>🌿 Ayurveda</span>
+
+                    </div>
+
+
+                    <p>
+                        Work with Ayurvedic formulations, herbal medicines,
+                        and quality assurance processes in an AYUSH pharmaceutical organization.
+                    </p>
+
+
+                    <div class="job-footer">
+
+                        <span class="job-skills">
+                            Pharmacognosy • Dravyaguna • Quality Control
+                        </span>
+
+
+                        <button onclick="applyJob('Ayurvedic Pharmacist')">
+                            Apply Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Job 2 -->
+
+                <div class="job-card" data-location="Karnataka"
+                    data-search="panchakarma therapist ayurveda panchakarma patient care wellness">
+
+                    <div class="job-header">
+
+                        <div>
+
+                            <h2>Panchakarma Therapist</h2>
+
+                            <p class="company">
+                                Ayurveda Wellness Center
+                            </p>
+
+                        </div>
+
+                        <span class="match-badge">
+                            90% Match
+                        </span>
+
+                    </div>
+
+
+                    <div class="job-details">
+
+                        <span>📍 Karnataka</span>
+                        <span>💼 Full-time</span>
+                        <span>🐍 Ayurveda</span>
+
+                    </div>
+
+
+                    <p>
+                        Provide Panchakarma therapies and assist patients under the supervision of Ayurvedic physicians.
+                    </p>
+
+
+                    <div class="job-footer">
+
+                        <span class="job-skills">
+                            Panchakarma • Patient Care • Ayurvedic
+                        </span>
+
+                        <button onclick="applyJob('Panchakarma Therapist')">
+                            Apply Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Job 3 -->
+                <div class="job-card" data-location="Maharashtra"
+                    data-search="ayurvedic formulation researcher ayurveda ayush rasashastra pharmacognosy formulation development">
+
+                    <div class="job-header">
+
+                        <div>
+                            <h2>Ayurvedic Formulation Researcher</h2>
+
+                            <p class="company">
+                                Herbal Life Sciences
+                            </p>
+
+                            <span class="job-type">
+                                AYUSH Opportunity
+                            </span>
+                        </div>
+
+                        <span class="match-badge">
+                            88% Match
+                        </span>
+
+                    </div>
+
+                    <div class="job-details">
+                        <span>📍 Maharashtra</span>
+                        <span>💼 Full-time</span>
+                        <span>🌿 AYUSH</span>
+                    </div>
+
+                    <p>
+                        Research and develop traditional Ayurvedic formulations
+                        using modern quality standards.
+                    </p>
+
+                    <div class="job-footer">
+
+                        <span class="job-skills">
+                            Rasashastra • Pharmacognosy • Formulation Development
+                        </span>
+
+                        <button onclick="applyJob('Ayurvedic Formulation Researcher')">
+                            Apply Now
+                        </button>
+
+                    </div>
+
+                </div>
+                <!-- Job 4 -->
+
+                <div class="job-card" data-location="Bengaluru"
+                    data-search="clinical research associate ayurveda clinical research ayush research pharmacology">
+
+                    <div class="job-header">
+
+                        <div>
+                            <h2>Clinical Research Associate – Ayurveda</h2>
+
+                            <p class="company">
+                                AyurLife Research Institute
+                            </p>
+                        </div>
+
+                        <span class="match-badge">
+                            88% Match
+                        </span>
+
+                    </div>
+
+
+                    <div class="job-details">
+
+                        <span>📍 Bengaluru</span>
+
+                        <span>💼 Full-time</span>
+
+                        <span>🔬 Clinical Research</span>
+
+                    </div>
+
+
+                    <p>
+                        Support clinical research studies involving Ayurvedic treatments,
+                        herbal medicines, patient data collection, and research documentation.
+                    </p>
+
+
+                    <div class="job-footer">
+
+                        <span class="job-skills">
+                            Clinical Research • Ayurveda • Pharmacology
+                        </span>
+
+
+                        <button onclick="applyJob('Clinical Research Associate – Ayurveda')">
+                            Apply Now
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+
+        </div>
+
+        </div>
+
+    </main>
+
+
+    <script>
+
+        async function loadJobs() {
+
+            const jobList = document.getElementById("jobList");
+
+            try {
+
+                const response = await fetch("http://localhost:3000/jobs");
+
+                if (!response.ok) {
+                    throw new Error("Failed to load jobs");
+                }
+
+                const jobs = await response.json();
+
+                jobList.innerHTML = "";
+
+                if (jobs.length === 0) {
+
+                    jobList.innerHTML = `
+                <p>No AYUSH jobs available yet.</p>
+            `;
+
+                    return;
+                }
+
+                jobs.forEach(function (job) {
+
+                    const card = document.createElement("div");
+
+                    card.className = "job-card";
+
+                    card.setAttribute(
+                        "data-location",
+                        job.location
+                    );
+
+                    card.setAttribute(
+                        "data-search",
+                        `${job.title} ${job.company} ${job.skills} ${job.description}`.toLowerCase()
+                    );
+
+                    card.innerHTML = `
+
+                <div class="job-header">
+
+                    <div>
+
+                        <h2>${job.title}</h2>
+
+                        <p class="company">
+                            ${job.company}
+                        </p>
+
+                    </div>
+
+                    <span class="match-badge">
+                        AYUSH Opportunity
+                    </span>
+
+                </div>
+
+
+                <div class="job-details">
+
+                    <span>📍 ${job.location}</span>
+
+                    <span>💼 ${job.type}</span>
+
+                    <span>🌿 AYUSH</span>
+
+                </div>
+
+
+                <p>
+                    ${job.description}
+                </p>
+
+
+                <div class="job-footer">
+
+                    <span class="job-skills">
+                        ${job.skills}
+                    </span>
+
+                    <button onclick="applyJob('${job.title}')">
+                        Apply Now
+                    </button>
+
+                </div>
+
+            `;
+
+                    jobList.appendChild(card);
+
+                });
+
+            } catch (error) {
+
+                console.error("Error loading jobs:", error);
+
+                jobList.innerHTML = `
+            <p>
+                Unable to load jobs.
+                Please make sure JSON Server is running.
+            </p>
+        `;
+
+            }
+
+        }
+
+
+        function filterJobs() {
+
+            const search = document
+                .getElementById("searchInput")
+                .value
+                .toLowerCase()
+                .trim();
+
+            const location = document
+                .getElementById("locationFilter")
+                .value
+                .toLowerCase()
+                .trim();
+
+            const jobs = document.querySelectorAll(".job-card");
+
+            jobs.forEach(function (job) {
+
+                const jobText = job.textContent.toLowerCase();
+
+                const jobSearch = (job.dataset.search || "")
+                    .toLowerCase();
+
+                const jobLocation = (job.dataset.location || "")
+                    .toLowerCase()
+                    .trim();
+
+                const matchesSearch =
+                    jobText.includes(search) ||
+                    jobSearch.includes(search);
+
+                const matchesLocation =
+                    location === "" ||
+                    location === "all" ||
+                    location === "all locations" ||
+                    jobLocation === location;
+
+                if (matchesSearch && matchesLocation) {
+                    job.style.display = "block";
+                } else {
+                    job.style.display = "none";
+                }
+
+            });
+        }
+
+
+        function applyJob(jobName) {
+
+            alert(
+                "Application started for: " +
+                jobName +
+                "\n\nApplication tracking will be connected later."
+            );
+
+        }
+
+
+        loadJobs();
+
+    </script>
+
+</body>
+
+</html>

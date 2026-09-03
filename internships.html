@@ -1,0 +1,355 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Internships - AcademiaHub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="logo">
+            Academia<span>Hub</span>
+        </div>
+
+        <div class="nav-links">
+
+            <a href="student-dashboard.html">
+                Dashboard
+            </a>
+
+            <button onclick="window.location.href='index.html'">
+                Logout
+            </button>
+
+        </div>
+
+    </nav>
+
+
+    <main class="internship-page">
+
+        <div class="internship-container">
+
+            <p class="section-tag">
+                INTERNSHIP OPPORTUNITIES
+            </p>
+
+            <h1>Find an Internship 🎓</h1>
+
+            <p class="internship-description">
+                Explore internships that match your skills
+                and career interests.
+            </p>
+
+
+            <!-- Search -->
+
+            <div class="internship-search">
+
+                <input type="text" id="internshipSearch" placeholder="Search internships or skills..."
+                    onkeyup="filterInternships()">
+
+                <select id="internshipLocation" onchange="filterInternships()">
+
+                    <option value="All">All Locations</option>
+                    <option value="Kerala">Kerala</option>
+                    <option value="Karnataka">Karnataka</option>
+                    <option value="Tamil Nadu">Tamil Nadu</option>
+                    <option value="Delhi">Delhi</option>
+                    <option value="Remote">Remote</option>
+                </select>
+
+            </div>
+
+
+            <!-- Internship 1 -->
+
+            <div class="internship-card" data-location="Kerala"
+                data-search="ayurveda clinical research dravyaguna pharmacognosy">
+
+                <div class="internship-top">
+
+                    <div>
+                        <h2>Clinical Research Intern - Ayurveda</h2>
+
+                        <p class="company">
+                            AyurCare Research Institute
+                        </p>
+                    </div>
+
+                    <span class="match-badge">
+                        94% Match
+                    </span>
+
+                </div>
+
+
+                <div class="internship-details">
+
+                    <span>📍 Kerala</span>
+
+                    <span>⏱ 3 Months</span>
+
+                    <span>🌿 Ayurveda</span>
+
+                </div>
+
+
+                <p>
+                    Assist in Ayurvedic clinical research, patient documentation,
+                    data collection and traditional medicine research activities.
+                </p>
+
+
+                <div class="internship-footer">
+
+                    <span>
+                        Dravyaguna • Pharmacognosy • Clinical Research
+                    </span>
+
+                    <button onclick="applyInternship('Clinical Research Intern - Ayurveda')">
+                        Apply
+                    </button>
+
+                </div>
+
+            </div>
+
+            <!-- Internship 2 -->
+
+            <div class="internship-card" data-location="Karnataka"
+                data-search="ayurvedic pharmacy formulation quality control dravyaguna">
+
+                <div class="internship-top">
+
+                    <div>
+                        <h2>Ayurvedic Pharmacy Intern</h2>
+
+                        <p class="company">
+                            AyurHerb Pharmaceuticals
+                        </p>
+                    </div>
+
+                    <span class="match-badge">
+                        89% Match
+                    </span>
+
+                </div>
+
+
+                <div class="internship-details">
+
+                    <span>📍 Karnataka</span>
+
+                    <span>⏱ 6 Months</span>
+
+                    <span>🌿 Ayurvedic Pharmacy</span>
+
+                </div>
+
+
+                <p>
+                    Gain practical experience in Ayurvedic medicine preparation,
+                    herbal formulation, quality testing and pharmaceutical processes.
+                </p>
+
+
+                <div class="internship-footer">
+
+                    <span>
+                        Dravyaguna • Herbal Formulation • Quality Control
+                    </span>
+
+                    <button onclick="applyInternship('Ayurvedic Pharmacy Intern')">
+                        Apply
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!<!-- Internship 3 -->
+
+                <div class="internship-card" data-location="Tamil Nadu"
+                    data-search="panchakarma ayurveda wellness therapy clinical training">
+
+                    <div class="internship-top">
+
+                        <div>
+                            <h2>Panchakarma Therapy Intern</h2>
+
+                            <p class="company">
+                                AyurWell Wellness Centre
+                            </p>
+                        </div>
+
+                        <span class="match-badge">
+                            86% Match
+                        </span>
+
+                    </div>
+
+
+                    <div class="internship-details">
+
+                        <span>📍 Tamil Nadu</span>
+
+                        <span>⏱ 4 Months</span>
+
+                        <span>🌿 Panchakarma</span>
+
+                    </div>
+
+
+                    <p>
+                        Assist experienced practitioners in Panchakarma procedures,
+                        patient care, wellness therapies and Ayurvedic treatment practices.
+                    </p>
+
+
+                    <div class="internship-footer">
+
+                        <span>
+                            Panchakarma • Patient Care • Ayurveda Therapy
+                        </span>
+
+                        <button onclick="applyInternship('Panchakarma Therapy Intern')">
+                            Apply
+                        </button>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Internship 4 -->
+
+                <div class="internship-card" data-location="Delhi"
+                    data-search="ayurveda yoga wellness naturopathy lifestyle">
+
+                    <div class="internship-top">
+
+                        <div>
+                            <h2>AYUSH Wellness &amp; Yoga Intern</h2>
+
+                            <p class="company">
+                                Prana AYUSH Wellness Centre
+                            </p>
+                        </div>
+
+                        <span class="match-badge">
+                            82% Match
+                        </span>
+
+                    </div>
+
+
+                    <div class="internship-details">
+
+                        <span>📍 Delhi</span>
+
+                        <span>⏱ 3 Months</span>
+
+                        <span>🧘 Yoga &amp; Wellness</span>
+
+                    </div>
+
+
+                    <p>
+                        Assist wellness professionals with yoga sessions, lifestyle
+                        guidance, wellness programs and AYUSH-based health activities.
+                    </p>
+
+
+                    <div class="internship-footer">
+
+                        <span>
+                            Yoga • Naturopathy • Wellness • Lifestyle
+                        </span>
+
+                        <button onclick="applyInternship('AYUSH Wellness & Yoga Intern')">
+                            Apply
+                        </button>
+
+                    </div>
+
+                </div>
+        </div>
+
+
+        </div>
+
+        </div>
+
+    </main>
+
+
+    <script>
+
+        function filterInternships() {
+
+            const search = document
+                .getElementById("internshipSearch")
+                .value
+                .toLowerCase()
+                .trim();
+
+            const location = document
+                .getElementById("internshipLocation")
+                .value
+                .toLowerCase()
+                .trim();
+
+            const internships = document.querySelectorAll(".internship-card");
+
+            internships.forEach(function (internship) {
+
+                const text = internship.dataset.search
+                    .toLowerCase();
+
+                const internshipLocation = internship.dataset.location
+                    .toLowerCase()
+                    .trim();
+
+                const matchesSearch = text.includes(search);
+
+                // "all", "all locations", or empty means show every location
+                const matchesLocation =
+                    location === "all" ||
+                    location === "all locations" ||
+                    location === "" ||
+                    internshipLocation === location;
+
+                if (matchesSearch && matchesLocation) {
+                    internship.style.display = "block";
+                } else {
+                    internship.style.display = "none";
+                }
+
+            });
+        }
+
+
+        function applyInternship(name) {
+
+            alert(
+                "Application started for: " +
+                name +
+                "\n\nThe application system will be connected to the database later."
+            );
+
+        }
+
+    </script>
+
+</body>
+
+</html>

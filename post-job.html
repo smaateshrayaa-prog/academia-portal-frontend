@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Post a Job - AcademiaHub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="logo">
+            Academia<span>Hub</span>
+        </div>
+
+        <div class="nav-links">
+
+            <a href="industry-dashboard.html">
+                Dashboard
+            </a>
+
+            <button onclick="window.location.href='index.html'">
+                Logout
+            </button>
+
+        </div>
+
+    </nav>
+
+
+    <main class="post-job-page">
+
+        <div class="post-job-container">
+
+            <a href="industry-dashboard.html" class="back-link">
+                ← Back to Dashboard
+            </a>
+
+            <p class="section-tag">
+                INDUSTRY
+            </p>
+
+            <h1>Post a New Job 💼</h1>
+
+            <p class="post-job-description">
+                Create an opportunity and find students
+                with the right skills.
+            </p>
+
+
+            <section class="job-form">
+
+                <div class="form-group">
+
+                    <label for="jobTitle">
+                        Job Title
+                    </label>
+
+                    <input
+                        type="text"
+                        id="jobTitle"
+                        placeholder="Example: Frontend Developer">
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="companyName">
+                        Company Name
+                    </label>
+
+                    <input
+                        type="text"
+                        id="companyName"
+                        placeholder="Example: TechNova Solutions">
+
+                </div>
+
+
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="jobLocation">
+                            Location
+                        </label>
+
+                        <select id="jobLocation">
+
+                            <option value="">
+                                Select Location
+                            </option>
+
+                            <option>
+                                Remote
+                            </option>
+
+                            <option>
+                                Bangalore
+                            </option>
+
+                            <option>
+                                Chennai
+                            </option>
+
+                            <option>
+                                Hyderabad
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="jobType">
+                            Employment Type
+                        </label>
+
+                        <select id="jobType">
+
+                            <option value="">
+                                Select Type
+                            </option>
+
+                            <option>
+                                Full-time
+                            </option>
+
+                            <option>
+                                Part-time
+                            </option>
+
+                            <option>
+                                Internship
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label for="jobSkills">
+                        Required Skills
+                    </label>
+
+                    <input
+                        type="text"
+                        id="jobSkills"
+                        placeholder="Example: JavaScript,React,HTML,CSS">
+
+                    <small>
+                        Separate skills with commas.
+                    </small>
+
+                </div>
+                <div class="form-group">
+
+    <label for="jobDescription">
+        Job Description
+    </label>
+
+    <textarea
+        id="jobDescription"
+        rows="6"
+        placeholder="Describe the role, responsibilities and requirements..."></textarea>
+<div class="form-actions">
+    <button type="button" onclick="postJob()">🚀 Post Job</button>
+    <button type="button" onclick="history.back()">Cancel</button>
+</div>
+</div>
+
+
+    
+
+</div>
+</main>
+
+<script src="script.js"></script>
+</body>
+</html>

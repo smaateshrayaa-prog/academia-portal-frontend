@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Dashboard - AcademiaHub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Top Navigation -->
+    <nav>
+        <div class="logo">
+            Academia<span>Hub</span>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+            <button onclick="alert('Logout functionality will be added later.')">
+                Logout
+            </button>
+        </div>
+    </nav>
+
+
+    <!-- Dashboard -->
+    <section class="dashboard">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <h3>Student Portal</h3>
+
+            <button class="side-btn active">🏠 Dashboard</button>
+
+            <button class="side-btn"
+                onclick="window.location.href='student-profile.html'">
+                👤 My Profile
+            </button>
+
+            <button class="side-btn"
+                onclick="window.location.href='skill-gap.html'">
+                🧠 My Skills
+            </button>
+
+            <button class="side-btn"
+                onclick="window.location.href='internships.html'">
+                💼 Internships
+            </button>
+
+            <button class="side-btn"
+                onclick="window.location.href='jobs.html'">
+                🏢 Jobs
+            </button>
+
+            <button class="side-btn"
+                onclick="window.location.href='projects.html'">
+                📁 My Projects
+            </button>
+
+            <button class="side-btn"
+                onclick="alert('Settings coming next!')">
+                ⚙️ Settings
+            </button>
+
+        </aside>
+
+
+        <!-- Main Content -->
+        <main class="dashboard-content">
+
+            <div class="welcome">
+                <p class="section-tag">STUDENT DASHBOARD</p>
+
+                <h1>Welcome back! 👋</h1>
+
+                <p>
+                    Track your skills, projects, internships and
+                    career opportunities.
+                </p>
+            </div>
+
+
+            <!-- Statistics -->
+            <div class="dashboard-cards">
+
+                <div class="dashboard-card">
+                    <span class="dashboard-icon">🧠</span>
+                    <h2>8</h2>
+                    <p>Skills Added</p>
+                </div>
+
+                <div class="dashboard-card">
+                    <span class="dashboard-icon">📁</span>
+                    <h2>4</h2>
+                    <p>Projects</p>
+                </div>

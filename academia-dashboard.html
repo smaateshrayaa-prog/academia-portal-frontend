@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Academia Dashboard - AcademiaHub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            Academia<span>Hub</span>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+
+            <button onclick="window.location.href='index.html'">
+                Logout
+            </button>
+        </div>
+    </nav>
+
+
+    <!-- Dashboard -->
+    <section class="dashboard">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <h3>Academia Portal</h3>
+
+            <button class="side-btn active">
+                🏠 Dashboard
+            </button>
+
+            <button class="side-btn"
+                onclick="window.location.href='students.html'"">
+                🎓 Students
+            </button>
+
+            <button class="side-btn"
+                onclick="alert('Faculty Management coming next!')">
+                👨‍🏫 Faculty
+            </button>
+
+            <button class="side-btn"
+                onclick="alert('Projects coming next!')">
+                📁 Projects
+            </button>
+
+            <button class="side-btn"
+                onclick="alert('Industry Collaboration coming next!')">
+                🏢 Industry
+            </button>
+
+            <button class="side-btn"
+                onclick="alert('Skill Analytics coming next!')">
+                📊 Skill Analytics
+            </button>
+
+            <button class="side-btn"
+                onclick="alert('Settings coming next!')">
+                ⚙️ Settings
+            </button>
+
+        </aside>
+
+
+        <!-- Main Content -->
+        <main class="dashboard-content">
+
+            <div class="welcome">
+
+                <p class="section-tag">
+                    ACADEMIA DASHBOARD
+                </p>
+
+                <h1>Welcome, Academia! 👋</h1>
+
+                <p>
+                    Monitor students, skills, projects and
+                    industry collaboration.
+                </p>
+
+            </div>
+
+
+            <!-- Statistics -->
+            <div class="dashboard-cards">
+
+                <div class="dashboard-card">
+                    <span class="dashboard-icon">🎓</span>
+
+                    <h2>1,250</h2>
+
+                    <p>Students</p>
+                </div>
+
+
+                <div class="dashboard-card">
+                    <span class="dashboard-icon">👨‍🏫</span>
+
+                    <h2>85</h2>
+
+                    <p>Faculty</p>
+                </div>
+
+
+                <div class="dashboard-card">
+                    <span class="dashboard-icon">📁</span>
+
+                    <h2>142</h2>
+
+                    <p>Projects</p>
+                </div>
+
+
+                <div class="dashboard-card">
+                    <span class="dashboard-icon">🏢</span>
+
+                    <h2>38</h2>
+
+                    <p>Industry Partners</p>
+                </div>
+
+            </div>
+
+
+            <!-- Skill Gap -->
+            <div class="dashboard-section">
+
+                <div class="section-header">
+
+                    <div>
+
+                        <h2>
+                            Student Skill Readiness
+                        </h2>
+
+                        <p>
+                            Overall industry readiness
+                            of registered students
+                        </p>
+
+                    </div>
+
+                    <strong>
+                        72%
+                    </strong>
+
+                </div>
+
+
+                <div class="large-bar">
+
+                    <div
+                        class="large-progress"
+                        style="width:72%;">
+                    </div>
+
+                </div>
+
+
+                <p class="recommendation">
+                    💡 Focus areas:
+                    Cloud Computing, AI/ML and
+                    Communication Skills.
+                </p>
+
+            </div>
+
+
+            <!-- Industry Collaboration -->
+            <div class="dashboard-section">
+
+                <h2>
+                    Industry Collaboration
+                </h2>
+
+                <div class="opportunity">
+
+                    <div>
+
+                        <h3>
+                            Active Partnerships
+                        </h3>
+
+                        <p>
+                            38 companies currently
+                            collaborating with the institution.
+                        </p>
+
+                    </div>
+
+                    <button
+                        onclick="alert('Partnership management coming next!')">
+                        View
+                    </button>
+
+                </div>
+
+
+                <div class="opportunity">
+
+                    <div>
+
+                        <h3>
+                            Internship Opportunities
+                        </h3>
+
+                        <p>
+                            64 internship opportunities
+                            available for students.
+                        </p>
+
+                    </div>
+
+                    <button
+                        onclick="alert('Internship management coming next!')">
+                        View
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Recent Projects -->
+            <div class="dashboard-section">
+
+                <h2>
+                    Recent Projects
+                </h2>
+
+
+                <div class="opportunity">
+
+                    <div>
+
+                        <h3>
+                            AI-Based Skill Mapping
+                        </h3>
+
+                        <p>
+                            Computer Science Department
+                        </p>
+
+                    </div>
+
+                    <button
+                        onclick="alert('Project details coming next!')">
+                        View
+                    </button>
+
+                </div>
+
+
+                <div class="opportunity">
+
+                    <div>
+
+                        <h3>
+                            Smart Campus Platform
+                        </h3>
+
+                        <p>
+                            Electronics Department
+                        </p>
+
+                    </div>
+
+                    <button
+                        onclick="alert('Project details coming next!')">
+                        View
+                    </button>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </section>
+
+</body>
+
+</html>

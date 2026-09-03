@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Skill Gap Analysis - AcademiaHub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+
+    <nav>
+
+        <div class="logo">
+            Academia<span>Hub</span>
+        </div>
+
+        <div class="nav-links">
+
+            <a href="student-dashboard.html">
+                Dashboard
+            </a>
+
+            <button onclick="window.location.href='index.html'">
+                Logout
+            </button>
+
+        </div>
+
+    </nav>
+
+
+    <!-- Skill Gap Page -->
+
+    <main class="skill-page">
+
+        <div class="skill-container">
+
+            <p class="section-tag">
+                SKILL ANALYSIS
+            </p>
+
+            <h1>Skill Gap Analysis 🧠</h1>
+
+            <p class="skill-description">
+                Compare your current skills with skills required
+                by the industry.
+            </p>
+
+
+            <!-- Match Score -->
+
+            <section class="match-card">
+
+                <div>
+
+                    <h2>Industry Readiness</h2>
+
+                    <p>
+                        Your overall skill match
+                    </p>
+
+                </div>
+
+                <div class="match-score">
+                    70%
+                </div>
+
+            </section>
+
+
+            <!-- Skills Comparison -->
+
+            <section class="skill-section">
+
+                <h2>Skills Comparison</h2>
+
+                <div class="skill-table">
+
+                    <div class="skill-row header">
+
+                        <span>Skill</span>
+
+                        <span>Your Level</span>
+
+                        <span>Industry Need</span>
+
+                        <span>Status</span>
+
+                    </div>
+
+
+                    <div class="skill-row">
+
+                        <span>JavaScript</span>
+
+                        <span>Advanced</span>
+
+                        <span>Advanced</span>
+
+                        <span class="match">
+                            ✓ Match
+                        </span>
+
+                    </div>
+
+
+                    <div class="skill-row">
+
+                        <span>Python</span>
+
+                        <span>Intermediate</span>
+
+                        <span>Intermediate</span>
+
+                        <span class="match">
+                            ✓ Match
+                        </span>
+
+                    </div>
+
+
+                    <div class="skill-row">
+
+                        <span>React</span>
+
+                        <span>Intermediate</span>
+
+                        <span>Advanced</span>
+
+                        <span class="gap">
+                            ⚠ Improve
+                        </span>
+
+                    </div>
+
+
+                    <div class="skill-row">
+
+                        <span>Cloud Computing</span>
+
+                        <span>Beginner</span>
+
+                        <span>Advanced</span>
+
+                        <span class="gap">
+                            ⚠ Gap
+                        </span>
+
+                    </div>
+
+
+                    <div class="skill-row">
+
+                        <span>Docker</span>
+
+                        <span>None</span>
+
+                        <span>Intermediate</span>
+
+                        <span class="gap">
+                            ⚠ Gap
+                        </span>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Skills to Improve -->
+
+            <section class="skill-section">
+
+                <h2>Skills to Improve 🚀</h2>
+
+                <div class="improve-grid">
+
+                    <div class="improve-card">
+
+                        <h3>☁️ Cloud Computing</h3>
+
+                        <p>
+                            Learn cloud fundamentals,
+                            deployment and cloud services.
+                        </p>
+
+                        <button onclick="learnMore('Cloud Computing')">
+                            Learn More
+                        </button>
+
+                    </div>
+
+
+                    <div class="improve-card">
+
+                        <h3>🐳 Docker</h3>
+
+                        <p>
+                            Learn containerization and
+                            application deployment.
+                        </p>
+
+                        <button onclick="learnMore('Docker')">
+                            Learn More
+                        </button>
+
+                    </div>
+
+
+                    <div class="improve-card">
+
+                        <h3>⚛️ React</h3>
+
+                        <p>
+                            Improve your React skills by
+                            building practical projects.
+                        </p>
+
+                        <button onclick="learnMore('React')">
+                            Learn More
+                        </button>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+
+            <!-- Recommendation -->
+
+            <section class="recommendation-box">
+
+                <h2>💡 Recommended Learning Path</h2>
+
+                <p>
+                    Based on your skill gaps, we recommend
+                    learning Cloud Computing → Docker → React.
+                </p>
+
+                <button
+                    class="primary-btn"
+                    onclick="showLearningPath()">
+
+                    View Learning Path
+
+                </button>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <script>
+
+        function learnMore(skill) {
+
+            alert(
+                "Learning resources for " +
+                skill +
+                " will be added later."
+            );
+
+        }
+
+
+        function showLearningPath() {
+
+            alert(
+                "Your personalized learning path will be available soon!"
+            );
+
+        }
+
+    </script>
+
+</body>
+
+</html>

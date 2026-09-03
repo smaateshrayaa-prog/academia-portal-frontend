@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>My Projects - AcademiaHub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="logo">
+            Academia<span>Hub</span>
+        </div>
+
+        <div class="nav-links">
+
+            <a href="student-dashboard.html">
+                Dashboard
+            </a>
+
+            <button onclick="window.location.href='index.html'">
+                Logout
+            </button>
+
+        </div>
+
+    </nav>
+
+
+    <main class="projects-page">
+
+        <div class="projects-container">
+
+            <p class="section-tag">
+                STUDENT PROJECTS
+            </p>
+
+            <h1>My Projects 📁</h1>
+
+            <p class="projects-description">
+                Showcase your projects, technologies and
+                achievements to potential employers.
+            </p>
+
+
+            <!-- Add Project -->
+
+            <section class="project-form">
+
+                <h2>Add New Project</h2>
+
+                <div class="form-group">
+
+                    <label>Project Name</label>
+
+                    <input
+                        type="text"
+                        id="projectName"
+                        placeholder="Example: Smart Campus">
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Description</label>
+
+                    <textarea
+                        id="projectDescription"
+                        placeholder="Describe what you built..."></textarea>
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Technologies Used</label>
+
+                    <input
+                        type="text"
+                        id="projectTech"
+                        placeholder="Example: HTML, CSS, JavaScript">
+
+                </div>
+
+
+                <div class="form-group">
+
+                    <label>Project Link</label>
+
+                    <input
+                        type="url"
+                        id="projectLink"
+                        placeholder="https://github.com/...">
+
+                </div>
+
+
+                <button
+                    class="primary-btn"
+                    onclick="addProject()">
+
+                    + Add Project
+
+                </button>
+
+            </section>
+
+
+            <!-- Project List -->
+
+            <section class="project-list-section">
+
+                <h2>My Projects</h2>
+
+                <div id="projectList">
+
+                    <!-- Sample Project -->
+
+                    <div class="project-card">
+
+                        <div class="project-card-top">
+
+                            <div>
+
+                                <h2>Smart Campus Platform</h2>
+
+                                <p>
+                                    A web platform designed to
+                                    connect students, academia
+                                    and industry.
+                                </p>
+
+                            </div>
+
+                            <span class="project-status">
+                                Completed
+                            </span>
+
+                        </div>
+
+
+                        <div class="project-tech">
+
+                            <span>HTML</span>
+                            <span>CSS</span>
+                            <span>JavaScript</span>
+
+                        </div>
+
+
+                        <a
+                            href="#"
+                            onclick="alert('Project link will be connected later.')">
+
+                            🔗 View Project
+
+                        </a>
+
+                    </div>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <script>
+
+        function addProject() {
+
+            const name =
+                document.getElementById("projectName").value;
+
+            const description =
+                document.getElementById("projectDescription").value;
+
+            const tech =
+                document.getElementById("projectTech").value;
+
+            const link =
+                document.getElementById("projectLink").value;
+
+
+            if (
+                name === "" ||
+                description === "" ||
+                tech === ""
+            ) {
+
+                alert("Please fill in the project name, description and technologies.");
+
+                return;
+
+            }
+
+
+            const projectList =
+                document.getElementById("projectList");
+
+
+            const project =
+                document.createElement("div");
+
+            project.className = "project-card";
+
+
+            const technologies =
+                tech.split(",")
+                .map(function(item) {
+
+                    return "<span>" +
+                        item.trim() +
+                        "</span>";
+
+                })
+                .join("");
+
+
+            project.innerHTML = `
+
+                <div class="project-card-top">
+
+                    <div>
+
+                        <h2>${name}</h2>
+
+                        <p>${description}</p>
+
+                    </div>
+
+                    <span class="project-status">
+                        Added
+                    </span>
+
+                </div>
+
+                <div class="project-tech">
+                    ${technologies}
+                </div>
+
+                ${
+                    link
+                    ? `<a href="${link}" target="_blank">
+                        🔗 View Project
+                       </a>`
+                    : ""
+                }
+
+            `;
+
+
+            projectList.appendChild(project);
+
+
+            document.getElementById("projectName").value = "";
+            document.getElementById("projectDescription").value = "";
+            document.getElementById("projectTech").value = "";
+            document.getElementById("projectLink").value = "";
+
+
+            alert("Project added successfully! 🎉");
+
+        }
+
+    </script>
+
+</body>
+
+</html>

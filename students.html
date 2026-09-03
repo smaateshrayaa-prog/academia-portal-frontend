@@ -1,0 +1,264 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Students - AcademiaHub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="logo">
+            Academia<span>Hub</span>
+        </div>
+
+        <div class="nav-links">
+
+            <a href="academia-dashboard.html">
+                Dashboard
+            </a>
+
+            <button onclick="window.location.href='index.html'">
+                Logout
+            </button>
+
+        </div>
+
+    </nav>
+
+
+    <main class="students-page">
+
+        <div class="students-container">
+
+            <p class="section-tag">
+                STUDENT MANAGEMENT
+            </p>
+
+            <h1>Students 🎓</h1>
+
+            <p class="students-description">
+                View student profiles, skills and industry readiness.
+            </p>
+
+
+            <!-- Search -->
+
+            <div class="student-search">
+
+                <input
+                    type="text"
+                    id="studentSearch"
+                    placeholder="Search students or skills..."
+                    onkeyup="filterStudents()">
+
+            </div>
+
+
+            <!-- Students -->
+
+            <div class="student-list">
+
+
+                <div class="student-card"
+                    data-search="rahul javascript react html">
+
+                    <div class="student-info">
+
+                        <div class="student-avatar">
+                            R
+                        </div>
+
+                        <div>
+
+                            <h2>Rahul Sharma</h2>
+
+                            <p>
+                                B.Tech Computer Science
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="student-skills">
+
+                        <span>JavaScript</span>
+                        <span>React</span>
+                        <span>HTML</span>
+
+                    </div>
+
+                    <div class="readiness">
+
+                        <strong>85%</strong>
+
+                        <span>Industry Ready</span>
+
+                    </div>
+
+                    <button
+                        onclick="window.location.href='student-details.html'">
+
+                        View Profile
+
+                    </button>
+
+                </div>
+
+
+                <div class="student-card"
+                    data-search="priya python ai machine learning sql">
+
+                    <div class="student-info">
+
+                        <div class="student-avatar">
+                            P
+                        </div>
+
+                        <div>
+
+                            <h2>Priya Patel</h2>
+
+                            <p>
+                                B.Tech Artificial Intelligence
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="student-skills">
+
+                        <span>Python</span>
+                        <span>AI/ML</span>
+                        <span>SQL</span>
+
+                    </div>
+
+                    <div class="readiness">
+
+                        <strong>91%</strong>
+
+                        <span>Industry Ready</span>
+
+                    </div>
+
+                    <button
+                        onclick="viewStudent('Priya Patel')">
+
+                        View Profile
+
+                    </button>
+
+                </div>
+
+
+                <div class="student-card"
+                    data-search="arjun java sql spring backend">
+
+                    <div class="student-info">
+
+                        <div class="student-avatar">
+                            A
+                        </div>
+
+                        <div>
+
+                            <h2>Arjun Kumar</h2>
+
+                            <p>
+                                B.Tech Information Technology
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="student-skills">
+
+                        <span>Java</span>
+                        <span>SQL</span>
+                        <span>Spring</span>
+
+                    </div>
+
+                    <div class="readiness">
+
+                        <strong>78%</strong>
+
+                        <span>Developing</span>
+
+                    </div>
+
+                    <button
+                        onclick="viewStudent('Arjun Kumar')">
+
+                        View Profile
+
+                    </button>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script>
+
+        function filterStudents() {
+
+            const search =
+                document.getElementById("studentSearch")
+                .value
+                .toLowerCase();
+
+            const students =
+                document.querySelectorAll(".student-card");
+
+
+            students.forEach(function(student) {
+
+                const text =
+                    student.dataset.search.toLowerCase();
+
+                if (text.includes(search)) {
+
+                    student.style.display = "grid";
+
+                } else {
+
+                    student.style.display = "none";
+
+                }
+
+            });
+
+        }
+
+
+        function viewStudent(name) {
+
+            alert(
+                "Student profile for " +
+                name +
+                " will be available here."
+            );
+
+        }
+
+    </script>
+
+</body>
+
+</html>

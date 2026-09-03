@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Login - AcademiaHub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+        <div class="logo">
+            Academia<span>Hub</span>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+        </div>
+    </nav>
+
+
+    <main class="login-page">
+
+        <div class="login-container">
+
+            <p class="section-tag">ACADEMIA × INDUSTRY</p>
+
+            <h1>Welcome to AcademiaHub 👋</h1>
+
+            <p class="login-description">
+                Choose your role to continue to your portal.
+            </p>
+
+
+            <div class="role-cards">
+
+                <!-- Student -->
+
+                <div class="role-card"
+                    onclick="openPortal('student')">
+
+                    <div class="role-icon">🎓</div>
+
+                    <h2>Student</h2>
+
+                    <p>
+                        Find internships, jobs, projects
+                        and improve your skills.
+                    </p>
+
+                    <span>Continue →</span>
+
+                </div>
+
+
+                <!-- Academia -->
+
+                <div class="role-card"
+                    onclick="openPortal('academia')">
+
+                    <div class="role-icon">🏫</div>
+
+                    <h2>Academia</h2>
+
+                    <p>
+                        Manage students, skills, projects
+                        and industry collaboration.
+                    </p>
+
+                    <span>Continue →</span>
+
+                </div>
+
+
+                <!-- Industry -->
+
+                <div class="role-card"
+                    onclick="openPortal('industry')">
+
+                    <div class="role-icon">🏢</div>
+
+                    <h2>Industry</h2>
+
+                    <p>
+                        Find talent, post jobs and
+                        create internship opportunities.
+                    </p>
+
+                    <span>Continue →</span>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script>
+
+        function openPortal(role) {
+
+            if (role === "student") {
+                window.location.href = "student-dashboard.html";
+            }
+
+            else if (role === "academia") {
+                window.location.href = "academia-dashboard.html";
+            }
+
+            else if (role === "industry") {
+                window.location.href = "industry-dashboard.html";
+            }
+
+        }
+
+    </script>
+
+</body>
+
+</html>

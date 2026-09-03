@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Industry Dashboard - AcademiaHub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="logo">
+            Academia<span>Hub</span>
+        </div>
+
+        <div class="nav-links">
+            <a href="index.html">Home</a>
+
+            <button onclick="window.location.href='index.html'">
+                Logout
+            </button>
+        </div>
+    </nav>
+
+
+    <!-- Dashboard -->
+    <section class="dashboard">
+
+        <!-- Sidebar -->
+        <aside class="sidebar">
+
+            <h3>Industry Portal</h3>
+
+            <button class="side-btn active">
+                🏠 Dashboard
+            </button>
+
+            <button class="side-btn"
+                onclick="alert('Job posting coming next!')">
+                💼 Jobs
+            </button>
+
+            <button class="side-btn"
+                onclick="alert('Internship posting coming next!')">
+                🎓 Internships
+            </button>
+
+            <button class="side-btn"
+                onclick="window.location.href='candidates.html'">
+                👥 Candidates
+            </button>
+
+            <button class="side-btn"
+                onclick="alert('Skill requirements coming next!')">
+                🧠 Required Skills
+            </button>
+
+            <button class="side-btn"
+                onclick="alert('Applications coming next!')">
+                📨 Applications
+            </button>
+
+            <button class="side-btn"
+                onclick="alert('Settings coming next!')">
+                ⚙️ Settings
+            </button>
+
+        </aside>
+
+
+        <!-- Main Content -->
+        <main class="dashboard-content">
+
+            <div class="welcome">
+
+                <p class="section-tag">
+                    INDUSTRY DASHBOARD
+                </p>
+
+                <h1>Welcome, Industry Partner! 👋</h1>
+
+                <p>
+                    Find skilled students, post opportunities
+                    and connect with academia.
+                </p>
+
+            </div>
+
+
+            <!-- Statistics -->
+            <div class="dashboard-cards">
+
+                <div class="dashboard-card">
+                    <span class="dashboard-icon">💼</span>
+
+                    <h2>18</h2>
+
+                    <p>Active Jobs</p>
+                </div>
+
+
+                <div class="dashboard-card">
+                    <span class="dashboard-icon">🎓</span>
+
+                    <h2>12</h2>
+
+                    <p>Internships</p>
+                </div>
+
+
+                <div class="dashboard-card">
+                    <span class="dashboard-icon">👥</span>
+
+                    <h2>246</h2>
+
+                    <p>Matched Candidates</p>
+                </div>
+
+
+                <div class="dashboard-card">
+                    <span class="dashboard-icon">📨</span>
+
+                    <h2>56</h2>
+
+                    <p>Applications</p>
+                </div>
+
+            </div>
+
+
+            <!-- Skill Requirements -->
+            <div class="dashboard-section">
+
+                <div class="section-header">
+
+                    <div>
+
+                        <h2>
+                            Most Requested Skills
+                        </h2>
+
+                        <p>
+                            Skills currently in demand
+                        </p>
+
+                    </div>
+
+                </div>
+
+
+                <div class="opportunity">
+
+                    <div>
+                        <h3>JavaScript</h3>
+                        <p>High demand</p>
+                    </div>
+
+                    <strong>92%</strong>
+
+                </div>
+
+
+                <div class="opportunity">
+
+                    <div>
+                        <h3>Python</h3>
+                        <p>High demand</p>
+                    </div>
+
+                    <strong>88%</strong>
+
+                </div>
+
+
+                <div class="opportunity">
+
+                    <div>
+                        <h3>Cloud Computing</h3>
+                        <p>Growing demand</p>
+                    </div>
+
+                    <strong>76%</strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- Post Opportunity -->
+            <div class="dashboard-section">
+
+                <h2>
+                    Post an Opportunity
+                </h2>
+
+                <div class="opportunity">
+
+                    <div>
+
+                        <h3>
+                            Need skilled students?
+                        </h3>
+
+                        <p>
+                            Post a job or internship and
+                            find suitable candidates.
+                        </p>
+
+                    </div>
+
+                    <button
+                        onclick="alert('Opportunity posting form coming next!')">
+                        Post Now
+                    </button>
+
+                </div>
+
+            </div>
+
+
+            <!-- Recommended Candidates -->
+            <div class="dashboard-section">
+
+                <h2>
+                    Recommended Candidates
+                </h2>
+
+
+                <div class="opportunity">
+
+                    <div>
+
+                        <h3>
+                            Student Candidate #001
+                        </h3>
+
+                        <p>
+                            JavaScript • React • Node.js
+                        </p>
+
+                    </div>
+
+                    <button
+                        onclick="alert('Candidate profile coming next!')">
+                        View
+                    </button>
+
+                </div>
+
+
+                <div class="opportunity">
+
+                    <div>
+
+                        <h3>
+                            Student Candidate #002
+                        </h3>
+
+                        <p>
+                            Python • AI/ML • Data Science
+                        </p>
+
+                    </div>
+
+                    <button
+                        onclick="alert('Candidate profile coming next!')">
+                        View
+                    </button>
+
+                </div>
+
+
+                <div class="opportunity">
+
+                    <div>
+
+                        <h3>
+                            Student Candidate #003
+                        </h3>
+
+                        <p>
+                            Cloud • DevOps • Linux
+                        </p>
+
+                    </div>
+
+                    <button
+                        onclick="alert('Candidate profile coming next!')">
+                        View
+                    </button>
+
+                </div>
+
+            </div>
+
+        </main>
+
+    </section>
+
+</body>
+
+</html>

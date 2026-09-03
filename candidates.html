@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Find Candidates - AcademiaHub</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <nav>
+
+        <div class="logo">
+            Academia<span>Hub</span>
+        </div>
+
+        <div class="nav-links">
+
+            <a href="industry-dashboard.html">
+                Dashboard
+            </a>
+
+            <button onclick="window.location.href='index.html'">
+                Logout
+            </button>
+
+        </div>
+
+    </nav>
+
+
+    <main class="candidates-page">
+
+        <div class="candidates-container">
+
+            <p class="section-tag">
+                TALENT DISCOVERY
+            </p>
+
+            <h1>Find the Right Talent 👥</h1>
+
+            <p class="candidates-description">
+                Search students based on their skills,
+                course and industry readiness.
+            </p>
+
+
+            <!-- Search -->
+
+            <div class="candidate-search">
+
+                <input
+                    type="text"
+                    id="candidateSearch"
+                    placeholder="Search by name or skill..."
+                    onkeyup="filterCandidates()">
+
+                <select
+                    id="readinessFilter"
+                    onchange="filterCandidates()">
+
+                    <option value="all">
+                        All Readiness Levels
+                    </option>
+
+                    <option value="90">
+                        90%+ Ready
+                    </option>
+
+                    <option value="80">
+                        80%+ Ready
+                    </option>
+
+                    <option value="70">
+                        70%+ Ready
+                    </option>
+
+                </select>
+
+            </div>
+
+
+            <!-- Candidate List -->
+
+            <div class="candidate-list">
+
+
+                <!-- Candidate 1 -->
+
+                <div class="candidate-card"
+                    data-search="rahul sharma javascript react html css"
+                    data-score="85">
+
+                    <div class="candidate-profile">
+
+                        <div class="candidate-avatar">
+                            R
+                        </div>
+
+                        <div>
+
+                            <h2>Rahul Sharma</h2>
+
+                            <p>
+                                B.Tech Computer Science
+                            </p>
+
+                            <p>
+                                ABC Institute of Technology
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="candidate-skills">
+
+                        <span>JavaScript</span>
+                        <span>React</span>
+                        <span>HTML</span>
+                        <span>CSS</span>
+
+                    </div>
+
+
+                    <div class="candidate-score">
+
+                        <strong>85%</strong>
+
+                        <span>
+                            Industry Readiness
+                        </span>
+
+                    </div>
+
+
+                    <button
+                        onclick="viewCandidate('Rahul Sharma')">
+
+                        View Profile
+
+                    </button>
+
+                </div>
+
+
+                <!-- Candidate 2 -->
+
+                <div class="candidate-card"
+                    data-search="priya patel python ai machine learning sql"
+                    data-score="91">
+
+                    <div class="candidate-profile">
+
+                        <div class="candidate-avatar">
+                            P
+                        </div>
+
+                        <div>
+
+                            <h2>Priya Patel</h2>
+
+                            <p>
+                                B.Tech Artificial Intelligence
+                            </p>
+
+                            <p>
+                                ABC Institute of Technology
+                            </p>

@@ -1,0 +1,49 @@
+{
+  "jobs": [
+    {
+      "id": "1",
+      "title": "Ayurvedic Pharmacist",
+      "company": "AyurHerb Pharmaceuticals",
+      "location": "Kerala",
+      "type": "Full-time",
+      "skills": "Dravyaguna, Pharmacognosy, Quality Control",
+      "description": "Work with Ayurvedic formulations, raw materials and quality assurance processes."
+    },
+    {
+      "id": "2",
+      "title": "Clinical Research Associate - Ayurveda",
+      "company": "Ayurveda Research Institute",
+      "location": "Delhi",
+      "type": "Full-time",
+      "skills": "Clinical Research, Ayurveda, Documentation",
+      "description": "Support clinical research studies related to Ayurvedic treatments and therapies."
+    },
+    {
+      "id": "3",
+      "title": "Panchakarma Therapist",
+      "company": "AyurWell Wellness Centre",
+      "location": "Karnataka",
+      "type": "Full-time",
+      "skills": "Panchakarma, Patient Care, Ayurveda",
+      "description": "Provide Panchakarma therapies and assist patients under the supervision of Ayurvedic physicians."
+    },
+    {
+      "id": "4",
+      "title": "Ayurvedic Formulation Researcher",
+      "company": "Herbal Life Sciences",
+      "location": "Maharashtra",
+      "type": "Full-time",
+      "skills": "Rasashastra, Pharmacognosy, Formulation Development",
+      "description": "Research and develop traditional Ayurvedic formulations using modern quality standards."
+    },
+    {
+      "id": "5",
+      "title": "Yoga and Wellness Instructor",
+      "company": "AYUSH Wellness Centre",
+      "location": "Tamil Nadu",
+      "type": "Part-time",
+      "skills": "Yoga, Wellness, Patient Guidance",
+      "description": "Conduct yoga and wellness sessions and support holistic health programs."
+    }
+  ]
+}
