@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Students - AcademiaHub</title>
+    <title>AYUSH Students - AYUSH Connect</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -15,7 +15,7 @@
     <nav>
 
         <div class="logo">
-            Academia<span>Hub</span>
+            AYUSH<span>Connect</span>
         </div>
 
         <div class="nav-links">
@@ -38,13 +38,14 @@
         <div class="students-container">
 
             <p class="section-tag">
-                STUDENT MANAGEMENT
+                AYUSH STUDENT MANAGEMENT
             </p>
 
-            <h1>Students 🎓</h1>
+            <h1>AYUSH Students 🎓</h1>
 
             <p class="students-description">
-                View student profiles, skills and industry readiness.
+                View AYUSH student profiles, specializations, skills,
+                clinical experience and career readiness.
             </p>
 
 
@@ -55,7 +56,7 @@
                 <input
                     type="text"
                     id="studentSearch"
-                    placeholder="Search students or skills..."
+                    placeholder="Search students, specializations or skills..."
                     onkeyup="filterStudents()">
 
             </div>
@@ -66,21 +67,23 @@
             <div class="student-list">
 
 
+                <!-- Student 1 -->
+
                 <div class="student-card"
-                    data-search="rahul javascript react html">
+                    data-search="arjun kumar ayurveda bams panchakarma herbal medicine clinical practice">
 
                     <div class="student-info">
 
                         <div class="student-avatar">
-                            R
+                            A
                         </div>
 
                         <div>
 
-                            <h2>Rahul Sharma</h2>
+                            <h2>Arjun Kumar</h2>
 
                             <p>
-                                B.Tech Computer Science
+                                BAMS – Ayurveda
                             </p>
 
                         </div>
@@ -89,9 +92,9 @@
 
                     <div class="student-skills">
 
-                        <span>JavaScript</span>
-                        <span>React</span>
-                        <span>HTML</span>
+                        <span>Ayurveda</span>
+                        <span>Panchakarma</span>
+                        <span>Herbal Medicine</span>
 
                     </div>
 
@@ -99,7 +102,7 @@
 
                         <strong>85%</strong>
 
-                        <span>Industry Ready</span>
+                        <span>Career Ready</span>
 
                     </div>
 
@@ -113,55 +116,10 @@
                 </div>
 
 
-                <div class="student-card"
-                    data-search="priya python ai machine learning sql">
-
-                    <div class="student-info">
-
-                        <div class="student-avatar">
-                            P
-                        </div>
-
-                        <div>
-
-                            <h2>Priya Patel</h2>
-
-                            <p>
-                                B.Tech Artificial Intelligence
-                            </p>
-
-                        </div>
-
-                    </div>
-
-                    <div class="student-skills">
-
-                        <span>Python</span>
-                        <span>AI/ML</span>
-                        <span>SQL</span>
-
-                    </div>
-
-                    <div class="readiness">
-
-                        <strong>91%</strong>
-
-                        <span>Industry Ready</span>
-
-                    </div>
-
-                    <button
-                        onclick="viewStudent('Priya Patel')">
-
-                        View Profile
-
-                    </button>
-
-                </div>
-
+                <!-- Student 2 -->
 
                 <div class="student-card"
-                    data-search="arjun java sql spring backend">
+                    data-search="ananya sharma homoeopathy bhms clinical practice patient care research">
 
                     <div class="student-info">
 
@@ -171,10 +129,10 @@
 
                         <div>
 
-                            <h2>Arjun Kumar</h2>
+                            <h2>Ananya Sharma</h2>
 
                             <p>
-                                B.Tech Information Technology
+                                BHMS – Homoeopathy
                             </p>
 
                         </div>
@@ -183,9 +141,58 @@
 
                     <div class="student-skills">
 
-                        <span>Java</span>
-                        <span>SQL</span>
-                        <span>Spring</span>
+                        <span>Homoeopathy</span>
+                        <span>Patient Care</span>
+                        <span>Clinical Practice</span>
+
+                    </div>
+
+                    <div class="readiness">
+
+                        <strong>91%</strong>
+
+                        <span>Career Ready</span>
+
+                    </div>
+
+                    <button
+                        onclick="viewStudent('Ananya Sharma')">
+
+                        View Profile
+
+                    </button>
+
+                </div>
+
+
+                <!-- Student 3 -->
+
+                <div class="student-card"
+                    data-search="meera devi siddha bsms herbal medicine clinical research wellness">
+
+                    <div class="student-info">
+
+                        <div class="student-avatar">
+                            M
+                        </div>
+
+                        <div>
+
+                            <h2>Meera Devi</h2>
+
+                            <p>
+                                BSMS – Siddha
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="student-skills">
+
+                        <span>Siddha</span>
+                        <span>Herbal Medicine</span>
+                        <span>Clinical Research</span>
 
                     </div>
 
@@ -198,7 +205,105 @@
                     </div>
 
                     <button
-                        onclick="viewStudent('Arjun Kumar')">
+                        onclick="viewStudent('Meera Devi')">
+
+                        View Profile
+
+                    </button>
+
+                </div>
+
+
+                <!-- Student 4 -->
+
+                <div class="student-card"
+                    data-search="rahul verma unani bums herbal medicine pharmacology patient care">
+
+                    <div class="student-info">
+
+                        <div class="student-avatar">
+                            R
+                        </div>
+
+                        <div>
+
+                            <h2>Rahul Verma</h2>
+
+                            <p>
+                                BUMS – Unani
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="student-skills">
+
+                        <span>Unani</span>
+                        <span>Pharmacology</span>
+                        <span>Patient Care</span>
+
+                    </div>
+
+                    <div class="readiness">
+
+                        <strong>82%</strong>
+
+                        <span>Career Ready</span>
+
+                    </div>
+
+                    <button
+                        onclick="viewStudent('Rahul Verma')">
+
+                        View Profile
+
+                    </button>
+
+                </div>
+
+
+                <!-- Student 5 -->
+
+                <div class="student-card"
+                    data-search="kavya r yoga naturopathy bnys wellness yoga therapy clinical practice">
+
+                    <div class="student-info">
+
+                        <div class="student-avatar">
+                            K
+                        </div>
+
+                        <div>
+
+                            <h2>Kavya R</h2>
+
+                            <p>
+                                BNYS – Yoga & Naturopathy
+                            </p>
+
+                        </div>
+
+                    </div>
+
+                    <div class="student-skills">
+
+                        <span>Yoga Therapy</span>
+                        <span>Naturopathy</span>
+                        <span>Wellness</span>
+
+                    </div>
+
+                    <div class="readiness">
+
+                        <strong>88%</strong>
+
+                        <span>Career Ready</span>
+
+                    </div>
+
+                    <button
+                        onclick="viewStudent('Kavya R')">
 
                         View Profile
 
@@ -250,7 +355,7 @@
         function viewStudent(name) {
 
             alert(
-                "Student profile for " +
+                "AYUSH student profile for " +
                 name +
                 " will be available here."
             );

@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Student Profile - AcademiaHub</title>
+    <title>AYUSH Student Profile - AYUSH Connect</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -17,7 +17,7 @@
     <nav>
 
         <div class="logo">
-            Academia<span>Hub</span>
+            AYUSH<span>Connect</span>
         </div>
 
         <div class="nav-links">
@@ -42,14 +42,14 @@
         <div class="profile-container">
 
             <p class="section-tag">
-                STUDENT PROFILE
+                AYUSH STUDENT PROFILE
             </p>
 
-            <h1>Build Your Profile</h1>
+            <h1>Build Your AYUSH Profile</h1>
 
             <p class="profile-description">
-                Add your education, skills and projects to
-                improve your industry opportunities.
+                Add your education, AYUSH skills, clinical experience
+                and research projects to improve your career opportunities.
             </p>
 
 
@@ -90,18 +90,26 @@
 
                         <input
                             type="text"
-                            placeholder="Enter your institution">
+                            placeholder="Enter your AYUSH institution">
 
                     </div>
 
 
                     <div class="form-group">
 
-                        <label>Course</label>
+                        <label>AYUSH Course</label>
 
-                        <input
-                            type="text"
-                            placeholder="Example: B.Tech CSE">
+                        <select>
+
+                            <option>Select course</option>
+                            <option>BAMS - Ayurveda</option>
+                            <option>BHMS - Homoeopathy</option>
+                            <option>BSMS - Siddha</option>
+                            <option>BUMS - Unani</option>
+                            <option>BNYS - Yoga & Naturopathy</option>
+                            <option>Other AYUSH Course</option>
+
+                        </select>
 
                     </div>
 
@@ -117,6 +125,7 @@
                             <option>2nd Year</option>
                             <option>3rd Year</option>
                             <option>4th Year</option>
+                            <option>5th Year / Internship</option>
 
                         </select>
 
@@ -138,14 +147,14 @@
             </section>
 
 
-            <!-- Skills -->
+            <!-- AYUSH Skills -->
 
             <section class="profile-section">
 
-                <h2>Technical Skills</h2>
+                <h2>AYUSH Skills & Competencies</h2>
 
                 <p class="help-text">
-                    Select the technologies you know.
+                    Select the AYUSH skills and competencies you have developed.
                 </p>
 
 
@@ -153,52 +162,52 @@
 
                     <label class="skill-option">
                         <input type="checkbox">
-                        HTML
+                        Ayurvedic Fundamentals
                     </label>
 
                     <label class="skill-option">
                         <input type="checkbox">
-                        CSS
+                        Herbal Medicine
                     </label>
 
                     <label class="skill-option">
                         <input type="checkbox">
-                        JavaScript
+                        Panchakarma
                     </label>
 
                     <label class="skill-option">
                         <input type="checkbox">
-                        Python
+                        Clinical Practice
                     </label>
 
                     <label class="skill-option">
                         <input type="checkbox">
-                        Java
+                        Dravyaguna
                     </label>
 
                     <label class="skill-option">
                         <input type="checkbox">
-                        React
+                        Pharmacology
                     </label>
 
                     <label class="skill-option">
                         <input type="checkbox">
-                        Node.js
+                        Yoga & Wellness
                     </label>
 
                     <label class="skill-option">
                         <input type="checkbox">
-                        SQL
+                        Naturopathy
                     </label>
 
                     <label class="skill-option">
                         <input type="checkbox">
-                        Cloud Computing
+                        AYUSH Clinical Research
                     </label>
 
                     <label class="skill-option">
                         <input type="checkbox">
-                        AI / ML
+                        Patient Care
                     </label>
 
                 </div>
@@ -206,17 +215,22 @@
             </section>
 
 
-            <!-- Soft Skills -->
+            <!-- Professional Skills -->
 
             <section class="profile-section">
 
-                <h2>Soft Skills</h2>
+                <h2>Professional Skills</h2>
 
                 <div class="skills-list">
 
                     <label class="skill-option">
                         <input type="checkbox">
-                        Communication
+                        Patient Communication
+                    </label>
+
+                    <label class="skill-option">
+                        <input type="checkbox">
+                        Clinical Observation
                     </label>
 
                     <label class="skill-option">
@@ -234,34 +248,57 @@
                         Problem Solving
                     </label>
 
+                    <label class="skill-option">
+                        <input type="checkbox">
+                        Research & Documentation
+                    </label>
+
                 </div>
 
             </section>
 
 
-            <!-- Projects -->
+            <!-- Clinical Experience -->
 
             <section class="profile-section">
 
-                <h2>Projects</h2>
+                <h2>Clinical Experience</h2>
 
                 <div class="form-group">
 
-                    <label>Project Name</label>
+                    <label>Clinical / Internship Experience</label>
+
+                    <textarea
+                        placeholder="Describe your clinical training, internship, hospital experience or practical exposure"></textarea>
+
+                </div>
+
+            </section>
+
+
+            <!-- Projects & Research -->
+
+            <section class="profile-section">
+
+                <h2>Projects & Research</h2>
+
+                <div class="form-group">
+
+                    <label>Project / Research Name</label>
 
                     <input
                         type="text"
-                        placeholder="Example: Smart Campus">
+                        placeholder="Example: Herbal Medicine Research">
 
                 </div>
 
 
                 <div class="form-group">
 
-                    <label>Project Description</label>
+                    <label>Project / Research Description</label>
 
                     <textarea
-                        placeholder="Describe your project"></textarea>
+                        placeholder="Describe your AYUSH project, research work or academic achievement"></textarea>
 
                 </div>
 
@@ -276,7 +313,7 @@
                     class="primary-btn"
                     onclick="saveProfile()">
 
-                    Save Profile
+                    Save AYUSH Profile
 
                 </button>
 
@@ -292,7 +329,7 @@
         function saveProfile() {
 
             const name =
-                document.getElementById("studentName").value;
+                document.getElementById("studentName").value.trim();
 
             if (name === "") {
 
@@ -303,7 +340,7 @@
             }
 
             alert(
-                "Profile saved successfully! 🎉"
+                "AYUSH profile saved successfully! 🎉"
             );
 
         }

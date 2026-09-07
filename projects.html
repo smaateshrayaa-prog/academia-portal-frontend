@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>My Projects - AcademiaHub</title>
+    <title>My AYUSH Projects - AYUSH Connect</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -15,7 +15,7 @@
     <nav>
 
         <div class="logo">
-            Academia<span>Hub</span>
+            AYUSH<span>Connect</span>
         </div>
 
         <div class="nav-links">
@@ -38,14 +38,15 @@
         <div class="projects-container">
 
             <p class="section-tag">
-                STUDENT PROJECTS
+                AYUSH STUDENT PROJECTS
             </p>
 
-            <h1>My Projects 📁</h1>
+            <h1>My AYUSH Projects 📁</h1>
 
             <p class="projects-description">
-                Showcase your projects, technologies and
-                achievements to potential employers.
+                Showcase your AYUSH research, clinical projects,
+                innovations and academic achievements to potential
+                employers and institutions.
             </p>
 
 
@@ -53,7 +54,8 @@
 
             <section class="project-form">
 
-                <h2>Add New Project</h2>
+                <h2>Add New AYUSH Project</h2>
+
 
                 <div class="form-group">
 
@@ -62,42 +64,42 @@
                     <input
                         type="text"
                         id="projectName"
-                        placeholder="Example: Smart Campus">
+                        placeholder="Example: Herbal Medicine Research">
 
                 </div>
 
 
                 <div class="form-group">
 
-                    <label>Description</label>
+                    <label>Project Description</label>
 
                     <textarea
                         id="projectDescription"
-                        placeholder="Describe what you built..."></textarea>
+                        placeholder="Describe your AYUSH project, research or innovation..."></textarea>
 
                 </div>
 
 
                 <div class="form-group">
 
-                    <label>Technologies Used</label>
+                    <label>AYUSH Domain / Specialization</label>
 
                     <input
                         type="text"
                         id="projectTech"
-                        placeholder="Example: HTML, CSS, JavaScript">
+                        placeholder="Example: Ayurveda, Panchakarma, Herbal Medicine">
 
                 </div>
 
 
                 <div class="form-group">
 
-                    <label>Project Link</label>
+                    <label>Project / Research Link</label>
 
                     <input
                         type="url"
                         id="projectLink"
-                        placeholder="https://github.com/...">
+                        placeholder="https://...">
 
                 </div>
 
@@ -106,7 +108,7 @@
                     class="primary-btn"
                     onclick="addProject()">
 
-                    + Add Project
+                    + Add AYUSH Project
 
                 </button>
 
@@ -117,11 +119,12 @@
 
             <section class="project-list-section">
 
-                <h2>My Projects</h2>
+                <h2>My AYUSH Projects</h2>
 
                 <div id="projectList">
 
-                    <!-- Sample Project -->
+
+                    <!-- Sample Project 1 -->
 
                     <div class="project-card">
 
@@ -129,12 +132,14 @@
 
                             <div>
 
-                                <h2>Smart Campus Platform</h2>
+                                <h2>
+                                    Herbal Medicine Research
+                                </h2>
 
                                 <p>
-                                    A web platform designed to
-                                    connect students, academia
-                                    and industry.
+                                    A research project focused on
+                                    studying the therapeutic potential
+                                    of medicinal plants used in Ayurveda.
                                 </p>
 
                             </div>
@@ -148,9 +153,9 @@
 
                         <div class="project-tech">
 
-                            <span>HTML</span>
-                            <span>CSS</span>
-                            <span>JavaScript</span>
+                            <span>Ayurveda</span>
+                            <span>Herbal Medicine</span>
+                            <span>Research</span>
 
                         </div>
 
@@ -164,6 +169,101 @@
                         </a>
 
                     </div>
+
+
+                    <!-- Sample Project 2 -->
+
+                    <div class="project-card">
+
+                        <div class="project-card-top">
+
+                            <div>
+
+                                <h2>
+                                    Yoga-Based Wellness Study
+                                </h2>
+
+                                <p>
+                                    An academic project exploring the
+                                    role of yoga and naturopathy in
+                                    promoting healthy lifestyle practices.
+                                </p>
+
+                            </div>
+
+                            <span class="project-status">
+                                Ongoing
+                            </span>
+
+                        </div>
+
+
+                        <div class="project-tech">
+
+                            <span>Yoga</span>
+                            <span>Naturopathy</span>
+                            <span>Wellness</span>
+
+                        </div>
+
+
+                        <a
+                            href="#"
+                            onclick="alert('Project link will be connected later.')">
+
+                            🔗 View Project
+
+                        </a>
+
+                    </div>
+
+
+                    <!-- Sample Project 3 -->
+
+                    <div class="project-card">
+
+                        <div class="project-card-top">
+
+                            <div>
+
+                                <h2>
+                                    AYUSH Clinical Research Project
+                                </h2>
+
+                                <p>
+                                    A student research project focused
+                                    on documenting clinical observations
+                                    and traditional AYUSH treatment practices.
+                                </p>
+
+                            </div>
+
+                            <span class="project-status">
+                                Research
+                            </span>
+
+                        </div>
+
+
+                        <div class="project-tech">
+
+                            <span>Clinical Research</span>
+                            <span>AYUSH</span>
+                            <span>Patient Care</span>
+
+                        </div>
+
+
+                        <a
+                            href="#"
+                            onclick="alert('Project link will be connected later.')">
+
+                            🔗 View Project
+
+                        </a>
+
+                    </div>
+
 
                 </div>
 
@@ -179,16 +279,16 @@
         function addProject() {
 
             const name =
-                document.getElementById("projectName").value;
+                document.getElementById("projectName").value.trim();
 
             const description =
-                document.getElementById("projectDescription").value;
+                document.getElementById("projectDescription").value.trim();
 
             const tech =
-                document.getElementById("projectTech").value;
+                document.getElementById("projectTech").value.trim();
 
             const link =
-                document.getElementById("projectLink").value;
+                document.getElementById("projectLink").value.trim();
 
 
             if (
@@ -197,7 +297,9 @@
                 tech === ""
             ) {
 
-                alert("Please fill in the project name, description and technologies.");
+                alert(
+                    "Please fill in the project name, description and AYUSH domain."
+                );
 
                 return;
 
@@ -244,13 +346,15 @@
 
                 </div>
 
+
                 <div class="project-tech">
                     ${technologies}
                 </div>
 
+
                 ${
                     link
-                    ? `<a href="${link}" target="_blank">
+                    ? `<a href="${link}" target="_blank" rel="noopener noreferrer">
                         🔗 View Project
                        </a>`
                     : ""
@@ -268,7 +372,7 @@
             document.getElementById("projectLink").value = "";
 
 
-            alert("Project added successfully! 🎉");
+            alert("AYUSH project added successfully! 🎉");
 
         }
 
