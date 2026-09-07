@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Find Candidates - AcademiaHub</title>
+    <title>Find AYUSH Talent - AYUSH Connect</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -15,12 +15,12 @@
     <nav>
 
         <div class="logo">
-            Academia<span>Hub</span>
+            AYUSH<span>Connect</span>
         </div>
 
         <div class="nav-links">
 
-            <a href="industry-dashboard.html">
+            <a href="ayush-dashboard.html">
                 Dashboard
             </a>
 
@@ -38,14 +38,14 @@
         <div class="candidates-container">
 
             <p class="section-tag">
-                TALENT DISCOVERY
+                AYUSH TALENT DISCOVERY
             </p>
 
-            <h1>Find the Right Talent 👥</h1>
+            <h1>Find the Right AYUSH Talent 👥</h1>
 
             <p class="candidates-description">
-                Search students based on their skills,
-                course and industry readiness.
+                Search AYUSH students and professionals based on specialization,
+                qualification, skills and career readiness.
             </p>
 
 
@@ -56,7 +56,7 @@
                 <input
                     type="text"
                     id="candidateSearch"
-                    placeholder="Search by name or skill..."
+                    placeholder="Search by name, specialization or skill..."
                     onkeyup="filterCandidates()">
 
                 <select
@@ -64,7 +64,7 @@
                     onchange="filterCandidates()">
 
                     <option value="all">
-                        All Readiness Levels
+                        All Career Readiness Levels
                     </option>
 
                     <option value="90">
@@ -81,6 +81,36 @@
 
                 </select>
 
+                <select
+                    id="specializationFilter"
+                    onchange="filterCandidates()">
+
+                    <option value="all">
+                        All AYUSH Specializations
+                    </option>
+
+                    <option value="ayurveda">
+                        Ayurveda
+                    </option>
+
+                    <option value="homoeopathy">
+                        Homoeopathy
+                    </option>
+
+                    <option value="siddha">
+                        Siddha
+                    </option>
+
+                    <option value="unani">
+                        Unani
+                    </option>
+
+                    <option value="yoga">
+                        Yoga & Naturopathy
+                    </option>
+
+                </select>
+
             </div>
 
 
@@ -92,25 +122,26 @@
                 <!-- Candidate 1 -->
 
                 <div class="candidate-card"
-                    data-search="rahul sharma javascript react html css"
-                    data-score="85">
+                    data-search="arjun kumar ayurveda panchakarma dravyaguna yoga"
+                    data-score="85"
+                    data-specialization="ayurveda">
 
                     <div class="candidate-profile">
 
                         <div class="candidate-avatar">
-                            R
+                            A
                         </div>
 
                         <div>
 
-                            <h2>Rahul Sharma</h2>
+                            <h2>Arjun Kumar</h2>
 
                             <p>
-                                B.Tech Computer Science
+                                BAMS – Ayurveda
                             </p>
 
                             <p>
-                                ABC Institute of Technology
+                                National AYUSH Institute
                             </p>
 
                         </div>
@@ -120,10 +151,10 @@
 
                     <div class="candidate-skills">
 
-                        <span>JavaScript</span>
-                        <span>React</span>
-                        <span>HTML</span>
-                        <span>CSS</span>
+                        <span>Ayurveda</span>
+                        <span>Panchakarma</span>
+                        <span>Dravyaguna</span>
+                        <span>Yoga</span>
 
                     </div>
 
@@ -133,16 +164,16 @@
                         <strong>85%</strong>
 
                         <span>
-                            Industry Readiness
+                            AYUSH Career Readiness
                         </span>
 
                     </div>
 
 
                     <button
-                        onclick="viewCandidate('Rahul Sharma')">
+                        onclick="viewCandidate('Arjun Kumar')">
 
-                        View Profile
+                        View AYUSH Profile
 
                     </button>
 
@@ -152,23 +183,206 @@
                 <!-- Candidate 2 -->
 
                 <div class="candidate-card"
-                    data-search="priya patel python ai machine learning sql"
-                    data-score="91">
+                    data-search="ananya sharma homoeopathy clinical research nutrition wellness patient care"
+                    data-score="91"
+                    data-specialization="homoeopathy">
 
                     <div class="candidate-profile">
 
                         <div class="candidate-avatar">
-                            P
+                            A
                         </div>
 
                         <div>
 
-                            <h2>Priya Patel</h2>
+                            <h2>Ananya Sharma</h2>
 
                             <p>
-                                B.Tech Artificial Intelligence
+                                BHMS – Homoeopathy
                             </p>
 
                             <p>
-                                ABC Institute of Technology
+                                National AYUSH Institute
                             </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="candidate-skills">
+
+                        <span>Homoeopathy</span>
+                        <span>Clinical Research</span>
+                        <span>Nutrition & Wellness</span>
+                        <span>Patient Care</span>
+
+                    </div>
+
+
+                    <div class="candidate-score">
+
+                        <strong>91%</strong>
+
+                        <span>
+                            AYUSH Career Readiness
+                        </span>
+
+                    </div>
+
+
+                    <button
+                        onclick="viewCandidate('Ananya Sharma')">
+
+                        View AYUSH Profile
+
+                    </button>
+
+                </div>
+
+
+                <!-- Candidate 3 -->
+
+                <div class="candidate-card"
+                    data-search="meera devi siddha herbal medicine clinical practice research"
+                    data-score="88"
+                    data-specialization="siddha">
+
+                    <div class="candidate-profile">
+
+                        <div class="candidate-avatar">
+                            M
+                        </div>
+
+                        <div>
+
+                            <h2>Meera Devi</h2>
+
+                            <p>
+                                BSMS – Siddha Medicine
+                            </p>
+
+                            <p>
+                                National AYUSH Institute
+                            </p>
+
+                        </div>
+
+                    </div>
+
+
+                    <div class="candidate-skills">
+
+                        <span>Siddha</span>
+                        <span>Herbal Medicine</span>
+                        <span>Clinical Practice</span>
+                        <span>Research</span>
+
+                    </div>
+
+
+                    <div class="candidate-score">
+
+                        <strong>88%</strong>
+
+                        <span>
+                            AYUSH Career Readiness
+                        </span>
+
+                    </div>
+
+
+                    <button
+                        onclick="viewCandidate('Meera Devi')">
+
+                        View AYUSH Profile
+
+                    </button>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <script>
+
+        function filterCandidates() {
+
+            const search =
+                document.getElementById('candidateSearch')
+                    .value.toLowerCase();
+
+            const readiness =
+                document.getElementById('readinessFilter')
+                    .value;
+
+            const specialization =
+                document.getElementById('specializationFilter')
+                    .value;
+
+
+            document
+                .querySelectorAll('.candidate-card')
+                .forEach(card => {
+
+                    const searchable =
+                        card.dataset.search.toLowerCase();
+
+                    const score =
+                        Number(card.dataset.score);
+
+                    const cardSpecialization =
+                        card.dataset.specialization;
+
+
+                    const matchesSearch =
+                        searchable.includes(search);
+
+
+                    const matchesReadiness =
+                        readiness === 'all' ||
+                        score >= Number(readiness);
+
+
+                    const matchesSpecialization =
+                        specialization === 'all' ||
+                        cardSpecialization === specialization;
+
+
+                    if (
+                        matchesSearch &&
+                        matchesReadiness &&
+                        matchesSpecialization
+                    ) {
+
+                        card.style.display = '';
+
+                    } else {
+
+                        card.style.display = 'none';
+
+                    }
+
+                });
+
+        }
+
+
+        function viewCandidate(name) {
+
+            alert(
+                "AYUSH Profile selected: " + name
+            );
+
+        }
+
+    </script>
+
+</body>
+
+</html>

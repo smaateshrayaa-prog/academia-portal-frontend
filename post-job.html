@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Post a Job - AcademiaHub</title>
+    <title>Post an AYUSH Opportunity - AcademiaHub</title>
 
     <link rel="stylesheet" href="style.css">
 </head>
@@ -42,48 +42,92 @@
             </a>
 
             <p class="section-tag">
-                INDUSTRY
+                AYUSH ORGANIZATION
             </p>
 
-            <h1>Post a New Job 💼</h1>
+            <h1>Post a New AYUSH Opportunity 🌿</h1>
 
             <p class="post-job-description">
-                Create an opportunity and find students
-                with the right skills.
+                Create an AYUSH career opportunity and connect with
+                qualified students and professionals.
             </p>
 
 
             <section class="job-form">
 
+                <!-- Opportunity Title -->
                 <div class="form-group">
 
                     <label for="jobTitle">
-                        Job Title
+                        Opportunity / Job Title
                     </label>
 
                     <input
                         type="text"
                         id="jobTitle"
-                        placeholder="Example: Frontend Developer">
+                        placeholder="Example: Ayurveda Medical Officer">
 
                 </div>
 
 
+                <!-- Organization -->
                 <div class="form-group">
 
                     <label for="companyName">
-                        Company Name
+                        Organization / Institution Name
                     </label>
 
                     <input
                         type="text"
                         id="companyName"
-                        placeholder="Example: TechNova Solutions">
+                        placeholder="Example: Sri Dhanwanthari Ayurvedic Hospital">
 
                 </div>
 
 
+                <!-- AYUSH System & Location -->
                 <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="ayushSystem">
+                            AYUSH System
+                        </label>
+
+                        <select id="ayushSystem">
+
+                            <option value="">
+                                Select AYUSH System
+                            </option>
+
+                            <option>
+                                Ayurveda
+                            </option>
+
+                            <option>
+                                Yoga & Naturopathy
+                            </option>
+
+                            <option>
+                                Unani
+                            </option>
+
+                            <option>
+                                Siddha
+                            </option>
+
+                            <option>
+                                Homoeopathy
+                            </option>
+
+                            <option>
+                                Multiple AYUSH Systems
+                            </option>
+
+                        </select>
+
+                    </div>
+
 
                     <div class="form-group">
 
@@ -98,19 +142,97 @@
                             </option>
 
                             <option>
-                                Remote
-                            </option>
-
-                            <option>
-                                Bangalore
-                            </option>
-
-                            <option>
                                 Chennai
                             </option>
 
                             <option>
+                                Bengaluru
+                            </option>
+
+                            <option>
                                 Hyderabad
+                            </option>
+
+                            <option>
+                                New Delhi
+                            </option>
+
+                            <option>
+                                Mumbai
+                            </option>
+
+                            <option>
+                                Kerala
+                            </option>
+
+                            <option>
+                                Tamil Nadu
+                            </option>
+
+                            <option>
+                                Karnataka
+                            </option>
+
+                            <option>
+                                Remote
+                            </option>
+
+                            <option>
+                                Other
+                            </option>
+
+                        </select>
+
+                    </div>
+
+                </div>
+
+
+                <!-- Organization Type & Employment -->
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="organizationType">
+                            Organization Type
+                        </label>
+
+                        <select id="organizationType">
+
+                            <option value="">
+                                Select Organization Type
+                            </option>
+
+                            <option>
+                                AYUSH Hospital
+                            </option>
+
+                            <option>
+                                Ayurvedic / AYUSH Clinic
+                            </option>
+
+                            <option>
+                                Wellness Centre
+                            </option>
+
+                            <option>
+                                Government Institution
+                            </option>
+
+                            <option>
+                                Educational Institution
+                            </option>
+
+                            <option>
+                                Research Institution
+                            </option>
+
+                            <option>
+                                Pharmaceutical Company
+                            </option>
+
+                            <option>
+                                Private Organization
                             </option>
 
                         </select>
@@ -121,7 +243,7 @@
                     <div class="form-group">
 
                         <label for="jobType">
-                            Employment Type
+                            Opportunity Type
                         </label>
 
                         <select id="jobType">
@@ -142,6 +264,22 @@
                                 Internship
                             </option>
 
+                            <option>
+                                Apprenticeship
+                            </option>
+
+                            <option>
+                                Fellowship
+                            </option>
+
+                            <option>
+                                Research Position
+                            </option>
+
+                            <option>
+                                Contract
+                            </option>
+
                         </select>
 
                     </div>
@@ -149,44 +287,243 @@
                 </div>
 
 
+                <!-- Qualification -->
+                <div class="form-group">
+
+                    <label for="qualification">
+                        Required Qualification
+                    </label>
+
+                    <select id="qualification">
+
+                        <option value="">
+                            Select Minimum Qualification
+                        </option>
+
+                        <option>
+                            12th / Higher Secondary
+                        </option>
+
+                        <option>
+                            Diploma
+                        </option>
+
+                        <option>
+                            BAMS
+                        </option>
+
+                        <option>
+                            BHMS
+                        </option>
+
+                        <option>
+                            BSMS
+                        </option>
+
+                        <option>
+                            BUMS
+                        </option>
+
+                        <option>
+                            BNYS
+                        </option>
+
+                        <option>
+                            MD / MS AYUSH
+                        </option>
+
+                        <option>
+                            PhD
+                        </option>
+
+                        <option>
+                            Other AYUSH Qualification
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Registration -->
+                <div class="form-group">
+
+                    <label for="registration">
+                        Registration Requirement
+                    </label>
+
+                    <select id="registration">
+
+                        <option value="">
+                            Select Requirement
+                        </option>
+
+                        <option>
+                            AYUSH Council Registration Required
+                        </option>
+
+                        <option>
+                            State Council Registration Required
+                        </option>
+
+                        <option>
+                            Central / National Registration Required
+                        </option>
+
+                        <option>
+                            Registration Not Required
+                        </option>
+
+                    </select>
+
+                </div>
+
+
+                <!-- Experience -->
+                <div class="form-row">
+
+                    <div class="form-group">
+
+                        <label for="experience">
+                            Required Experience
+                        </label>
+
+                        <select id="experience">
+
+                            <option value="">
+                                Select Experience
+                            </option>
+
+                            <option>
+                                Freshers
+                            </option>
+
+                            <option>
+                                0–1 Years
+                            </option>
+
+                            <option>
+                                1–3 Years
+                            </option>
+
+                            <option>
+                                3–5 Years
+                            </option>
+
+                            <option>
+                                5+ Years
+                            </option>
+
+                        </select>
+
+                    </div>
+
+
+                    <div class="form-group">
+
+                        <label for="salary">
+                            Salary / Stipend
+                        </label>
+
+                        <input
+                            type="text"
+                            id="salary"
+                            placeholder="Example: ₹25,000 per month">
+
+                    </div>
+
+                </div>
+
+
+                <!-- Skills -->
                 <div class="form-group">
 
                     <label for="jobSkills">
-                        Required Skills
+                        Required AYUSH Skills / Competencies
                     </label>
 
                     <input
                         type="text"
                         id="jobSkills"
-                        placeholder="Example: JavaScript,React,HTML,CSS">
+                        placeholder="Example: Panchakarma, Clinical Diagnosis, Yoga Therapy">
 
                     <small>
                         Separate skills with commas.
                     </small>
 
                 </div>
+
+
+                <!-- Job Description -->
                 <div class="form-group">
 
-    <label for="jobDescription">
-        Job Description
-    </label>
+                    <label for="jobDescription">
+                        Opportunity Description
+                    </label>
 
-    <textarea
-        id="jobDescription"
-        rows="6"
-        placeholder="Describe the role, responsibilities and requirements..."></textarea>
-<div class="form-actions">
-    <button type="button" onclick="postJob()">🚀 Post Job</button>
-    <button type="button" onclick="history.back()">Cancel</button>
-</div>
-</div>
+                    <textarea
+                        id="jobDescription"
+                        rows="6"
+                        placeholder="Describe the role, responsibilities, clinical/research duties, required qualifications and other requirements..."></textarea>
+
+                </div>
 
 
-    
+                <!-- Additional Requirements -->
+                <div class="form-group">
 
-</div>
-</main>
+                    <label for="additionalRequirements">
+                        Additional Requirements
+                    </label>
 
-<script src="script.js"></script>
+                    <textarea
+                        id="additionalRequirements"
+                        rows="4"
+                        placeholder="Example: Valid registration, clinical experience, communication skills, willingness to work shifts..."></textarea>
+
+                </div>
+
+
+                <!-- Application Deadline -->
+                <div class="form-group">
+
+                    <label for="applicationDeadline">
+                        Application Deadline
+                    </label>
+
+                    <input
+                        type="date"
+                        id="applicationDeadline">
+
+                </div>
+
+
+                <!-- Actions -->
+                <div class="form-actions">
+
+                    <button
+                        type="button"
+                        onclick="postJob()">
+                        🌿 Post AYUSH Opportunity
+                    </button>
+
+                    <button
+                        type="button"
+                        onclick="history.back()">
+                        Cancel
+                    </button>
+
+                </div>
+
+            </section>
+
+        </div>
+
+    </main>
+
+
+    <script src="script.js"></script>
+
 </body>
+
 </html>
